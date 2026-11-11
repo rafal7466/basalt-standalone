@@ -1,0 +1,14 @@
+build/
+build-*/
+.vs/
+*.user
+# EuRoC data is downloaded locally (see README)
+dataset/
+# private vcpkg created by scripts/setup_vcpkg.ps1
+tools/
+# keep the reference MH_01 results, ignore new runs
+results/*
+!results/MH_01_stereo/
+!results/MH_01_mono/
+!results/MH_01_groundtruth_tum.txt
+__pycache__/

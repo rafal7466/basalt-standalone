@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "bw_vio MH_01 (Release)",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/Release/bw_vio.exe",
+      "args": [
+        "--dataset", "${workspaceFolder}/dataset/MH_01_easy",
+        "--out", "${workspaceFolder}/results/MH_01"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "preLaunchTask": "Build Release"
+    },
+    {
+      "name": "bw_vio MH_01 (Debug, 300 frames)",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/Debug/bw_vio.exe",
+      "args": [
+        "--dataset", "${workspaceFolder}/dataset/MH_01_easy",
+        "--out", "${workspaceFolder}/results/MH_01_debug", "--max-frames", "300"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    }
+  ]
+}

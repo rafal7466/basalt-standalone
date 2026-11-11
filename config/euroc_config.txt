@@ -1,0 +1,26 @@
+# VIO configuration (from basalt/data/euroc_config.json). All keys optional.
+optical_flow_detection_grid_size: 50
+optical_flow_max_recovered_dist2: 0.04
+optical_flow_max_iterations: 5
+optical_flow_epipolar_error: 0.005
+optical_flow_levels: 3
+optical_flow_pattern_scale: 0.5
+vio_max_states: 3
+vio_max_kfs: 7
+vio_min_frames_after_kf: 5
+vio_new_kf_keypoints_thresh: 0.7
+vio_obs_std_dev: 0.5
+vio_obs_huber_thresh: 1.0
+vio_min_triangulation_dist: 0.05
+vio_outlier_threshold: 3.0
+vio_filter_iteration: 4
+vio_max_iterations: 7
+vio_lm_lambda_initial: 1e-4
+vio_lm_lambda_min: 1e-6
+vio_lm_lambda_max: 1e2
+vio_init_pose_weight: 1e8
+vio_init_ba_weight: 1e1
+vio_init_bg_weight: 1e2
+vio_marg_lost_landmarks: true
+vio_kf_marg_feature_ratio: 0.1
+vio_debug: false

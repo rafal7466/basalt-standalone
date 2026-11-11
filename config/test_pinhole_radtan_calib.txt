@@ -1,0 +1,7 @@
+# Pinhole + radial-tangential camera, used by bw_tests only.
+# EuRoC cam0 calibration from mav0/cam0/sensor.yaml (fu fv cu cv k1 k2 p1 p2).
+num_cams: 1
+camera_type_cam0: pinhole-radtan
+intrinsics_cam0: 458.654 457.296 367.215 248.375 -0.28340811 0.07395907 0.00019359 1.76187114e-05
+resolution: 752 480
+T_imu_cam0: -0.0216401454975 -0.064676986768 0.00981073058949 -0.007239825785317818 0.007541278561558601 0.7017845426564943 0.7123125505904486
