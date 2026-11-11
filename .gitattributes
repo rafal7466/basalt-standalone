@@ -2,3 +2,6 @@
 *.png binary
 *.txt text eol=lf
 *.csv text eol=lf
+# generated run outputs: keep them out of GitHub's language statistics
+results/** linguist-generated=true
+docs/** linguist-documentation=true
